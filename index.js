@@ -16,6 +16,10 @@ const prefix = "!";
 		message.reply(`Pong! This message had a latency of ${timeTaken}ms.`);
 
 		}
+		if (command === "random"){
+			const random = Math.random();
+			message.reply(`${random}`);  
+		}
 	});
 
 client.login(config.BOT_TOKEN);
