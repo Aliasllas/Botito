@@ -12,13 +12,13 @@ const prefix = "!";
 		const command = args.shift().toLowerCase();
 
 		if (command === "ping") {
-		const timeTaken = Date.now() - message.createdTimestamp;
-		message.reply(`Pong! This message had a latency of ${timeTaken}ms.`);
-
+			const timeTaken = Date.now() - message.createdTimestamp;
+			message.reply(`Pong! This message had a latency of ${timeTaken}ms.`);
 		}
+
 		if (command === "random"){
 			const random = Math.random();
-			message.reply(`${random}`);  
+			message.reply(`${random} It's Your lucky number`);  
 		}
 	});
 
